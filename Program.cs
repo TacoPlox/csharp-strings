@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace strings
 {
@@ -115,6 +116,10 @@ Línea 3");
             Array.Reverse(helloWorldCharArray);
 
             System.Console.WriteLine(new String(helloWorldCharArray));
+
+            //Simple Invert
+            System.Console.WriteLine(new String(helloWorld.Reverse().ToArray()));
+            System.Console.WriteLine(String.Concat(helloWorld.Reverse()));
         }
     }
 }
